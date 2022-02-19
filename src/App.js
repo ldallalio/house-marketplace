@@ -9,6 +9,7 @@ import ForgotPassword from './pages/ForgotPassword';
 import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
 import Profile from './pages/Profile';
+import Category from './pages/Category';
 
 function App() {
 	return (
@@ -17,6 +18,7 @@ function App() {
 				<Routes>
 					<Route path='/' element={<Explore />} />
 					<Route path='/offers' element={<Offers />} />
+					<Route path='/category/:categoryName' element={<Category />} />
 					<Route path='/forgot-password' element={<ForgotPassword />} />
 					<Route path='/sign-in' element={<SignIn />} />
 					<Route path='/sign-up' element={<SignUp />} />

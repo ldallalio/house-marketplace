@@ -114,7 +114,6 @@ function CreateListing() {
 		} else {
 			geolocation.lat = latitude;
 			geolocation.lng = longitude;
-			location = address;
 		}
 
 		// Store image in firebase
@@ -172,7 +171,6 @@ function CreateListing() {
 			geolocation,
 			timestamp: serverTimestamp(),
 		};
-		console.log(formDataCopy);
 		formDataCopy.location = address;
 		delete formDataCopy.images;
 		delete formDataCopy.address;

@@ -11,6 +11,6 @@ module.exports = {
 		ecmaVersion: 'latest',
 		sourceType: 'module',
 	},
-	plugins: ['react', 'only-warn'],
+	plugins: ['react'],
 	rules: {},
 };
